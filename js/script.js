@@ -3,5 +3,7 @@ $(document).ready(function(){
         dots: true,
         centerMode: true,   
         appendDots:$('.slider-nav'),
+        prevArrow:$('.prevArrow'),
+        nextArrow:$('.nextArrow'),
     });
 })
