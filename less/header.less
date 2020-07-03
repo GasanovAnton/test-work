@@ -5,6 +5,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
     min-height: 1024px;
+    position: relative;
 }
 
 
@@ -25,6 +26,8 @@
   
 .logo-svg {
     fill: currentColor;
+    height: 56px;
+    width: 64px;    
 }
   
 .logo-txt {
@@ -100,9 +103,55 @@
     fill: #ffffff;
 }
 
+.search-form{
+    min-height: 24px;
+    width: 24px;
+    position: relative;
+    &__input{
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 40px;
+        left: -130px;
+        outline: none;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #ffffff;
+        &:focus{
+            width: 150px;
+            height: 30px;
+            border: 2px solid #fff;
+            transition: width 1s ease;
+        }
+    }
+    &__label{
+        display: block;
+    }
+    &__svg{
+        width: 100%;
+        height: 100%;
+        fill: #ffffff;
+        &:hover {
+            fill: #bfab93;
+        }
+        &:active{
+            fill: #aa7e47;
+        }
+    }
+}
+
 .search {
     fill: #ffffff;
     width: 24px;
+}
+
+.header__burger {
+    display: none;
 }
 
 .slider-wrap {
@@ -223,8 +272,9 @@
 }
 
 .slider-nav {
+    position: absolute;
     width: 100%;
-    margin: 320px 0 0 0;
+    bottom: 5%;
 }
 
 .slider-nav .slick-dots{
@@ -274,3 +324,5 @@
     border: 1px solid #c1b19f;
     box-sizing: border-box;
 }
+
+
