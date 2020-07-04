@@ -1049,13 +1049,12 @@ body {
   }
   .video-wrap {
     top: 35%;
+    width: 50%;
+    left: 25%;
   }
   .video-wrap__btn {
     margin: 0 auto;
     padding: 0;
-  }
-  .video-wrap__title {
-    display: none;
   }
   .video-wrap__des {
     display: none;
@@ -1131,5 +1130,10 @@ body {
   }
   .video-wrap {
     top: 25%;
+    width: 50%;
+    left: 25%;
+  }
+  .video-wrap__title {
+    display: none;
   }
 }
