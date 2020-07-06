@@ -260,6 +260,10 @@
   background-color: #998675;
   color: #ffffff;
 }
+.latest-projects__nav-button:active {
+  background-color: #473a2e;
+  color: #ffffff;
+}
 .latest-projects__link {
   display: block;
   display: -webkit-box;
@@ -593,6 +597,7 @@
   height: 395px;
   border: 1.0px solid #f8f8f8;
   margin: 0 15px;
+  outline: none;
 }
 .recent-posts__slider-item-img {
   display: block;
@@ -806,6 +811,7 @@
 .main-menu-wrap {
   float: right;
   margin-top: 20px;
+  margin-left: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,6 +852,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
 }
 .main-menu-item-icon {
   display: block;
@@ -1405,8 +1412,8 @@ body {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     overflow: auto;
-    left: 0;
-    top: -180%;
+    left: -180%;
+    top: -20px;
     background-color: #998675;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1423,10 +1430,7 @@ body {
             align-items: center;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    padding: 120px 10px 20px 10px;
-  }
-  .main-menu-item {
-    margin-bottom: 50px;
+    padding: 160px 10px 20px 10px;
   }
   .main-menu-list {
     display: block;
@@ -1440,10 +1444,11 @@ body {
     margin: 0 0 30px 0;
   }
   .main-menu-wrap.active {
-    top: -20px;
+    left: -200px;
   }
   .logo {
     z-index: 3;
+    margin-left: 45px;
   }
   .logo-svg {
     height: 70%;
@@ -1709,6 +1714,11 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .counters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 40px 0;
+  }
   .counters-block {
     margin: 0 5.5px;
   }
@@ -1719,6 +1729,15 @@ body {
   }
   .header {
     padding-bottom: 0;
+  }
+  .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 45px;
+  }
+  .logo-txt {
+    display: none;
   }
   .slider-item {
     width: 90%;
@@ -1790,17 +1809,15 @@ body {
     padding: 0 0 0 30px;
   }
   .counters {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 20px 0;
   }
   .counters-block {
-    margin: 36.5px 0;
+    margin: 10px;
   }
   .footer {
     padding: 40px 0;
