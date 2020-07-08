@@ -1668,6 +1668,7 @@ body {
   }
   .recent-posts {
     padding: 40px 0;
+    display: none;
   }
   .recent-posts__des {
     width: 100%;
