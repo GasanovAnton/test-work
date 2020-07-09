@@ -2,15 +2,19 @@ $(document).ready(function () {
     $('.slider').slick({
         dots: true,
         centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         appendDots: $('.slider-nav'),
         prevArrow: $('.prevArrow'),
         nextArrow: $('.nextArrow'),
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 1500,
                 settings: {
                     dots: false,
-                    arrows: false
+                    arrows: false,
+                    variableWidth: true
                 }
             },
             {
